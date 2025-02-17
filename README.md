@@ -1,27 +1,43 @@
-# Opapao
+# Opa! Pão Padaria
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
-## Development server
+**Descrição do Projeto**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O Projeto02 é um site para um sistema de padaria, desenvolvido como parte da disciplina de Front-End. O objetivo deste projeto é criar uma plataforma onde os usuários possam acessar diversas informações e interagir com o conteúdo relacionado à padaria.
 
-## Code scaffolding
+**Integrantes da Equipe:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Rafael Ananias
+- Lucas Denner
+- Alexssandro Moura
+- Carlos Matheus
 
-## Build
+**Funcionalidades**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O site oferece as seguintes páginas e funcionalidades:
 
-## Running unit tests
+Página Home: Apresenta o conteúdo principal do projeto, com informações relevantes sobre a padaria.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+**Sobre Nós:** Descrição da padaria, sua história e missão.
 
-## Running end-to-end tests
+**Contatos:** Informações para entrar em contato com a padaria.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Suporte ao Cliente**: Canal de atendimento ao cliente para dúvidas ou problemas.
 
-## Further help
+**Eventos:** Detalhes sobre eventos e promoções especiais organizados pela padaria.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Feedback:** Espaço para os clientes darem sugestões e opiniões sobre os produtos e serviços.
+
+**Localização:** Mapa interativo para localizar a padaria.
+
+**Métodos de Pagamento:** Informações sobre as formas de pagamento aceitas pela padaria.
+
+**Receitas:** Receitas exclusivas e dicas de produtos vendidos na padaria.
+
+
+**Tecnologias Utilizadas**
+HTML
+CSS
+Typescript
+Angular
+
