@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './events.component.html',
-  styleUrl: './events.component.css'
+  //styleUrl: './events.component.css'
+  styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 })
 export class EventsComponent {
 

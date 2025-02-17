@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './feedbacks.component.html',
-  styleUrl: './feedbacks.component.css'
+  //styleUrl: './feedbacks.component.css'
+  styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 })
 export class FeedbacksComponent {
 
