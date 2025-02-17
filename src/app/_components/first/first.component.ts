@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-first',
   standalone: true,
   imports: [],
-  templateUrl: './footer.component.html',
-  //styleUrl: './footer.component.css'
+  templateUrl: './first.component.html',
+  //styleUrl: './first.component.css'
   styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 })
-export class FooterComponent {
+export class FirstComponent {
 
 }
