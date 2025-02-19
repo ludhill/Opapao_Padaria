@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   //styleUrl: './location.component.css'
   styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 })
-export class LocationComponent {
+export default class LocationComponent {
 
 }

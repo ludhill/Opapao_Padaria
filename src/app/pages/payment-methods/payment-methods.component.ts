@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   //styleUrl: './payment-methods.component.css'
   styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 })
-export class PaymentMethodsComponent {
+export default class PaymentMethodsComponent {
 
 }
