@@ -1,13 +1,28 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-first',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './first.component.html',
   //styleUrl: './first.component.css'
   styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 })
-export class FirstComponent {
+export default class FirstComponent {
 
+  products: any[] = [];
+
+  httpClient = inject(HttpClient);
+  
+  ngOnInit(){
+    this.httpClient.get<any>('/api/products').subscribe((products)=>{
+      this.products = products;
+    });
+  }
+
+  trackByFn(index:number, product:any):any{
+    return product.id;
+  }
 }

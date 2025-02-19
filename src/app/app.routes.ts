@@ -36,21 +36,27 @@ export const routes: Routes = [
         //component: RecipeComponent
     },
     {
-      path: 'custumer-support',
-      title: 'custumer-support',
-      loadComponent: () => import('./pages/customer-support/customer-support.component')
-      //component: RecipeComponent
+        path: 'custumer-support',
+        title: 'custumer-support',
+        loadComponent: () => import('./pages/customer-support/customer-support.component')
+        //component: RecipeComponent
     },
     {
-      path: 'payment-methods',
-      title: 'payment-methods',
-      loadComponent: () => import('./pages/payment-methods/payment-methods.component')
-      //component: RecipeComponent
+        path: 'payment-methods',
+        title: 'payment-methods',
+        loadComponent: () => import('./pages/payment-methods/payment-methods.component')
+        //component: RecipeComponent
     },
     {
-      path: 'location',
-      title: 'location',
-      loadComponent: () => import('./pages/location/location.component')
-      //component: RecipeComponent
+        path: 'location',
+        title: 'location',
+        loadComponent: () => import('./pages/location/location.component')
+        //component: RecipeComponent
+    },
+    {
+        path: 'first',
+        title: 'first',
+        loadComponent: () => import('./_components/first/first.component')
+        //component: RecipeComponent
     }
 ];
