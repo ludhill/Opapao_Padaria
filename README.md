@@ -41,3 +41,9 @@ CSS
 Typescript
 Angular
 
+Ao clonar submeter comandos no cmd:
+
+npm install -g @angular/cli18
+npm install
+npx ng serve
+npx json-server db.json

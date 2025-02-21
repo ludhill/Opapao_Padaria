@@ -2,23 +2,83 @@
     "products":[
         {
             "id":"1",
-            "title":"Produto de Teste"
+            "categoria": "Pães",
+            "title":"Pão de Campo"
         },
         {
             "id":"2",
-            "title":"Produto de"
+            "categoria": "Pães",
+            "title":"Focaccia"
         },
         {
             "id":"3",
-            "title":"Produto"
+            "categoria": "Pães",
+            "title":"Pão de Forma Artesanal"
         },
         {
             "id":"4",
-            "title":"Produ"
+            "categoria": "Pães",
+            "title":"Pão italiano"
         },
         {
             "id":"5",
-            "title":"Pro"
+            "categoria": "Salgados",
+            "title":"Croissant"
+        },
+        {
+            "id":"6",
+            "categoria": "Salgados",
+            "title":"Empada"
+        },
+        {
+            "id":"7",
+            "categoria": "Salgados",
+            "title":"Coxinha"
+        },
+        {
+            "id":"8",
+            "categoria": "Salgados",
+            "title":"Esfilha"
+        },
+        {
+            "id":"9",
+            "categoria": "Bolos",
+            "title":"Bolo de chocolate"
+        },
+        {
+            "id":"10",
+            "categoria": "Bolos",
+            "title":"Bolo de milho com cobertura de chocolate"
+        },
+        {
+            "id":"11",
+            "categoria": "Bolos",
+            "title":"Bolo de queijo com goibada"
+        },
+        {
+            "id":"11",
+            "categoria": "Bolos",
+            "title":"Bolo de limão"
+        },
+        {
+            "id":"12",
+            "categoria": "Cafés",
+            "title":"Expresso"
+        },
+        {
+            "id":"13",
+            "categoria": "Cafés",
+            "title":"Cappuccino"
+        },
+        {
+            "id":"14",
+            "categoria": "Cafés",
+            "title":"Latte"
+        },
+        {
+            "id":"15",
+            "categoria": "Cafés",
+            "title":"Americano"
         }
     ]
 }
