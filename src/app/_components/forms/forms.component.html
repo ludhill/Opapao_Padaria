@@ -2,10 +2,70 @@
 <hr>
 <br>
 <h2 style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Receba as novidades e promoções da casa</h2>
+<form (ngSubmit)="cadastrar()" style="justify-self: center; border-radius: 2px;">
+  <div class="container my-2" style="">
+    <div class="row d-flex justify-content-lg-between" style="">
 
-<form (ngSubmit)="cadastrar()">
-  <input type="text" placeholder="Nome" class="form-control" [(ngModel)]="nome">
-  <input type="text" placeholder="Sobrenome" class="form-control" [(ngModel)]="sobrenome">
-  <input type="email" placeholder="Email" class="form-control" [(ngModel)]="email">
-  <input type="submit" value="Cadastrar" class="btn btn-dark mt-3">
+      <div class="col-12 col-md-6">
+        <form class="row g-3 needs-validation m-0 m-lg-5 my-5" action="enviar.php" method="POST">
+          <h3> Envie uma mensagem! </h3>
+          <div class="col-12 col-lg-6 py-1">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingNome" placeholder="Nome:" name="nome" required="">
+              <label for="floatingNome">Nome</label>
+              <div class="invalid-feedback">
+                Por favor insira seu nome!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 py-1">
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="E-mail:" name="email" required="">
+              <label for="floatingEmail">E-mail</label>
+              <div class="invalid-feedback">
+                Por favor insira seu E-mail!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 py-1">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingAssunto" placeholder="Assunto:" name="assunto" required="">
+              <label for="floatingAssunto">Assunto</label>
+              <div class="invalid-feedback">
+                Por favor insira o assunto!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 py-1">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Nos envie uma mensagem!" id="floatingTextarea" type="text" style="min-height: 100px" name="message" required=""></textarea>
+              <label for="floatingTextarea">Nos envie uma mensagem!</label>
+              <div class="invalid-feedback">
+                Por favor insira a mensagem!
+              </div>
+            </div>
+          </div>
+          <div class="col-12 py-1">
+            <button class="btn btn-success" type="submit"  value="Cadastrar">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="row">
+          <div class="col-12 col-lg-6 mt-5">
+            <iframe class="d-flex jutify-content-center d-none d-lg-block" style="" src="https://www.google.com/maps/embed?pb=!4v1664560127840!6m8!1m7!1sF1aaf5t7kzUSgaDIoRp54A!2m2!1d-5.850462475706444!2d-35.22631699903994!3f259.54455020013086!4f8.604753552787315!5f0.7820865974627469" width="500wm" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="d-flex jutify-content-center w-100 d-block d-lg-none" style="height:400px" src="https://www.google.com/maps/embed?pb=!4v1664560127840!6m8!1m7!1sF1aaf5t7kzUSgaDIoRp54A!2m2!1d-5.850462475706444!2d-35.22631699903994!3f259.54455020013086!4f8.604753552787315!5f0.7820865974627469" width="" height="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </form>
+  <!--
+  <form (ngSubmit)="cadastrar()" style="justify-self: center; border-radius: 2px;">
+    <input type="text" placeholder="Nome" class="form-control" [(ngModel)]="nome">
+    <input type="text" placeholder="Sobrenome" class="form-control" [(ngModel)]="sobrenome">
+    <input type="email" placeholder="Email" class="form-control" [(ngModel)]="email">
+    <input type="submit" value="Cadastrar" class="btn btn-dark mt-3">
+  </form>
+  -->
