@@ -15,7 +15,7 @@
     "sourceMap": true,
     "declaration": false,
     "experimentalDecorators": true,
-    "moduleResolution": "node",//bundle
+    "moduleResolution": "bundler",//bundle
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
