@@ -1,6 +1,7 @@
 <hr>
 <br>
 <form [formGroup]="formulario">
+  <!--Diretiva @If-->
   @if (formulario.get('nome')?.hasError('required') && formulario.get('nome')?.touched) {
     <p class="alert alert-warning"> O campo nome é obrigatório</p>
   }
@@ -23,8 +24,9 @@
   <input type="text" formControlName="email" placeholder="email" class="form-control">
 
 
-
-  <input type="button" value="Cadastrar"  (click)="cadastrar()"   class="btn btn-dark" >
+<!--Event Binding:    (Click)="cadastrar()"-->
+<!--Property Binding: [disabled]="formulario.invalid"-->
+  <input type="button" value="Cadastrar"  (click)="cadastrar()"   class="btn btn-dark" [disabled]="formulario.invalid" >
 </form>
 <br>
 <br>
