@@ -1,67 +1,30 @@
 <hr>
 <br>
-<h2 style="text-align: center; font-family: 'Courier New', Courier, monospace; font-weight: bold;">Receba as novidades e
-  promoções da casa</h2>
-<form (ngSubmit)="cadastrar()" class="row needs-validation m-0 m-lg-5 mb-5" style=" border-radius: 2px;" method="POST"
-  action="enviar.php">
+<form [formGroup]="formulario">
+  @if (formulario.get('nome')?.hasError('required') && formulario.get('nome')?.touched) {
+    <p class="alert alert-warning"> O campo nome é obrigatório</p>
+  }
 
-  <h3 class="text-center"> Envie uma mensagem! </h3>
+<!---->
 
-  <div class="container mb-5">
+  @if (formulario.get('nome')?.hasError('minlength') && formulario.get('nome')?.touched) {
+    <p class="alert alert-warning"> O campo nome precisa conter pelo menos 3 caracteres.</p>
+  }
+  <input type="text" formControlName="nome"   placeholder="nome"   class="form-control">
+  @if (formulario.get('email')?.hasError('required') && formulario.get('email')?.touched) {
+    <p class="alert alert-warning"> O campo email é obrigatório</p>
+  }
 
-    <div class="row">
+<!---->
 
-      <div class="col">
-        <label for="floatingNome">Nome</label>
-        <input type="text" class="form-control" id="floatingNome" placeholder="Nome:" name="nome" required="">
-        <div class="invalid-feedback">
-          Por favor insira seu nome!
-        </div>
-      </div>
+  @if (formulario.get('email')?.hasError('minlength') && formulario.get('email')?.touched) {
+    <p class="alert alert-warning"> O campo email precisa conter pelo menos 3 caracteres.</p>
+  }
+  <input type="text" formControlName="email" placeholder="email" class="form-control">
 
-      <div class="col">
-        <label for="floatingEmail">E-mail</label>
-        <input type="email" class="form-control" id="floatingEmail" placeholder="E-mail:" name="email" required="">
-        <div class="invalid-feedback">
-          Por favor insira seu E-mail!
-        </div>
-      </div>
 
-      <div class="col">
-        <label for="floatingAssunto">Assunto</label>
-        <input type="text" class="form-control" id="floatingAssunto" placeholder="Assunto:" name="assunto" required="">
-        <div class="invalid-feedback">
-          Por favor insira o assunto!
-        </div>
-      </div>
 
-    </div>
-
-    <div class="row">
-
-      <div class="col">
-        <label for="floatingTextarea">Nos envie uma mensagem!</label>
-        <textarea class="form-control" placeholder="Nos envie uma mensagem!" id="floatingTextarea" type="text"
-          style="min-height: 100px" name="message" required=""></textarea>
-        <div class="invalid-feedback">
-          Por favor insira a mensagem!
-        </div>
-      </div> 
-    </div>
-
-  </div>
-          
-      <div class="col">
-        <button class="btn btn-success" type="submit" value="Cadastrar">Enviar</button>
-      </div>
-
-  
+  <input type="button" value="Cadastrar"  (click)="cadastrar()"   class="btn btn-dark" >
 </form>
-<!--
-  <form (ngSubmit)="cadastrar()" style="justify-self: center; border-radius: 2px;">
-    <input type="text" placeholder="Nome" class="form-control" [(ngModel)]="nome">
-    <input type="text" placeholder="Sobrenome" class="form-control" [(ngModel)]="sobrenome">
-    <input type="email" placeholder="Email" class="form-control" [(ngModel)]="email">
-    <input type="submit" value="Cadastrar" class="btn btn-dark mt-3">
-  </form>
-  -->
+<br>
+<br>
