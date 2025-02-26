@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './payment-methods.component.html',
-  //styleUrl: './payment-methods.component.css'
-  styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+  styleUrl: './payment-methods.component.css'
 })
 export default class PaymentMethodsComponent {
 

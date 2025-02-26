@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './contact.component.html',
-  //styleUrl: './contact.component.css',
-  styleUrl: '/ ../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+  styleUrl: './contact.component.css',
 })
 export default class ContactComponent {
 
